@@ -1,6 +1,10 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container")
 
+inputBox.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") { addTask(); // If the key "Enter" is pressed, this will call the function "addTask()"
+    }
+});
 
 // Add task
 function addTask() {
